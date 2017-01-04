@@ -200,12 +200,12 @@ export class AppComponent  {
 	constructor(private folderService : FolderService){}
 	
 	getFolders() : void{
-		 this.folderService.getFolders().then(folder => this.folderList = folder);
-		// console.log(this.folder);
+		this.folderService.getFolders().then(folder => this.folderList = folder);
+		console.log(this.folder);
 	}
 	
 	ngOnInit() : void{
-		//this.getFolders();
+		this.getFolders();
 	}
 	
 	}

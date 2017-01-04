@@ -27,6 +27,12 @@ export class FolderService{
 	getFolders(id: number): Promise<Folders> {
 		console.log(FOLDERS);
 		return Promise.resolve(FOLDERS);
-      })
 	}
+	/*
+		getHeroesSlowly(): Promise<Hero[]> {
+		return new Promise(resolve => {
+		setTimeout(() => resolve(this.getHeroes()), 2000);
+	});
+	
+	*/
 }
